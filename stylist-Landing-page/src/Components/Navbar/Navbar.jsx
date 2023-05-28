@@ -4,11 +4,11 @@ import './Navbar.css'
 import { Link } from "react-scroll";
 import { BiMenu, BiX } from "react-icons/bi";
 const Navbar = () => {
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
   const handleClick = () =>  setOpen(!open)
   return (
    
-    <div className=' h-[70px] bg-blue-200 drop-shadow-lg xs:justify-between  2xl:justify-around  p-4 flex font-sans ' >
+    <div className=' h-[70px] z-20 relative bg-slate-200 drop-shadow-lg xs:justify-between  2xl:justify-around  p-4 flex font-sans ' >
       <div className='w-[100px] cursor-pointer text-[#F8F8F8] '>
         <p className='font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500'>Seaplace</p>
       </div>
@@ -42,14 +42,14 @@ const Navbar = () => {
       onClick={handleClick}
       >
         {open ?  (
-          <BiMenu className='font-extrabold text-[#F8F8F8] text-3xl ' />
+          <BiMenu className='font-extrabold text-slate-500 text-3xl  ' />
         ) : (
-          <BiX className='font-extrabold text-[#F8F8F8] text-3xl'/>
+          <BiX className='font-extrabold text-slate-500 text-3xl'/>
         )}
 
       </div>
 
-      <div className={open ? "hidden" : `flex-col flex text-center justify-center items-center gap-9 p-4 xs:w-full xs:h-screen 2xl:hidden lg:hidden   xs:h-screen md:h-screen bg-gradient-to-r xs:h-screen  from-cyan-500 to-blue-200 text-[#F8F8F8] absolute top-0 left-0`}>
+      <div className={open ? "hidden" : `  flex-col flex text-center justify-center items-center fixed inset-0 gap-9 p-4 xs:w-full  xs:h-screen 2xl:hidden lg:hidden   xs:h-screen md:h-screen bg-slate-200 text-slate-500 font-bold text-2xl absolute top-0 left-0`}>
       <Link to="about" smooth={true} duration={500}>
            <p>
            about
