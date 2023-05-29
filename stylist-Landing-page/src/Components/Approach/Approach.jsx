@@ -14,16 +14,16 @@ const Approach = () => {
       <div className='2xl:flex 2xl:justify-around xs:flex 2xl:flex-row xs:flex-col'>
      <div className='flex flex-col text-center'>
      <img src="https://img.freepik.com/free-psd/3d-nft-icon-digital-wallet_629802-10.jpg?size=626&ext=jpg&ga=GA1.1.1034348580.1658549494&semt=ais" className='max-w-[300px]' alt="" />
-    <p>Create cryptocurrency wallet</p>
+    <p className='text-2xl'>Create cryptocurrency wallet</p>
      </div>
      <div className='flex flex-col text-center p-2'>
      <img src="https://img.freepik.com/free-psd/3d-nft-icon-metaverse-illustration_629802-14.jpg?size=626&ext=jpg&ga=GA1.1.1034348580.1658549494&semt=sph" className='max-w-[300px]' alt="" />
-     <p>Look into the diverse world of cryptocurrency coins</p>
+     <p className='text-2xl'>Look into the diverse world of cryptocurrency coins</p>
      </div>
      
-     <div className='flex flex-col text-center font-mediumm'>
+     <div className='flex flex-col text-center font-medium'>
      <img src="https://img.freepik.com/free-psd/3d-nft-icon-nft-art_629802-16.jpg?size=626&ext=jpg&ga=GA1.1.1034348580.1658549494&semt=ais" className='max-w-[300px]' alt="" />
-     <p>Create and Trade NFT's</p>
+     <p className='text-2xl'>Create and Trade NFT's</p>
      </div>
      
      
