@@ -1,19 +1,4 @@
-.custom-shape-divider-top-1685320800 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-}
-
-.custom-shape-divider-top-1685320800 svg {
-    position: relative;
-    display: block;
-    width: calc(160% + 1.3px);
-    height: 92px;
-}
-
-.custom-shape-divider-top-1685320800 .shape-fill {
-    fill: #FFFFFF;
+.BoredApe
+{
+    font-weight:400 !important;
 }
