@@ -26,6 +26,10 @@
 .custom-shape-divider-bottom-1685312267 .shape-fill {
    fill: #fff;
 }
+.service
+{
+   margin-top: 50px;
+}
 
 /** For mobile devices **/
 @media (max-width: 767px) {

@@ -6,6 +6,7 @@ import { BiMenu, BiX } from "react-icons/bi";
 const Navbar = () => {
   const [open, setOpen] = useState(false)
   const handleClick = () =>  setOpen(!open)
+  
   return (
    
     <div className=' h-[70px] z-20 relative bg-slate-200 drop-shadow-lg xs:justify-between  2xl:justify-around  p-4 flex font-sans ' >
@@ -49,7 +50,7 @@ const Navbar = () => {
 
       </div>
 
-      <div className={open ? "hidden" : `  flex-col flex text-center justify-center items-center fixed inset-0 gap-9 p-4 xs:w-full  xs:h-screen 2xl:hidden lg:hidden   xs:h-screen md:h-screen bg-slate-200 text-slate-500 font-bold text-2xl absolute top-0 left-0`}>
+      <div   className={open ? `hidden` : `  flex-col flex text-center justify-center items-center fixed inset-0 gap-9 p-4 xs:w-full  xs:h-screen 2xl:hidden lg:hidden   xs:h-screen md:h-screen bg-slate-200 text-slate-500 font-bold text-2xl absolute top-0 left-0 bottom-0`}>
       <Link to="about" smooth={true} duration={500}>
            <p>
            about
@@ -60,12 +61,12 @@ const Navbar = () => {
            approach
           </p> 
           </Link>
-          <Link to="contact" smooth={true} duration={500}>
+          <Link to="contact" smooth={true} duration={500} >
           <p>
            contact
           </p> 
           </Link>
-          <Link to="service" smooth={true} duration={500}>
+          <Link to="service" smooth={true} duration={500} >
           <p>
            service
           </p> 

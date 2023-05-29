@@ -6,10 +6,10 @@ const About = () => {
       name="about"
       className="itscreen bg-slate-200 relative text-center justify-center z-10  items-center flex"
       >
-       <div className=" max-width-[70rem]">
+       <div className=" max-w-[70rem]">
     <p className="text-5xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500">NFT MarketPlace</p>
        <p className="text-center break-all">Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-       <button className="text-center mt-4 border-2  p-2 text-xl font-bold
+       <button className="text-center mt-2 border-2  p-2 text-xl font-bold 
         bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500 min-width-[100px] rounded-full">Join us now</button>
        </div>
        <div class="custom-shape-divider-bottom-1685312267">
