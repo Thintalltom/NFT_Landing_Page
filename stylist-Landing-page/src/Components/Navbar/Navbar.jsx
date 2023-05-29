@@ -4,7 +4,7 @@ import './Navbar.css'
 import { Link } from "react-scroll";
 import { BiMenu, BiX } from "react-icons/bi";
 const Navbar = () => {
-  const [open, setOpen] = useState(false)
+  const [open, setOpen] = useState(true)
   const handleClick = () =>  setOpen(!open)
   
   return (
@@ -50,7 +50,7 @@ const Navbar = () => {
 
       </div>
 
-      <div   className={open ? `hidden` : `  flex-col flex text-center justify-center items-center fixed inset-0 gap-9 p-4 xs:w-full  xs:h-screen 2xl:hidden lg:hidden   xs:h-screen md:h-screen bg-slate-200 text-slate-500 font-bold text-2xl absolute top-0 left-0 bottom-0`}>
+      <div   className={open ? `hidden` : `  flex-col flex text-center justify-center items-center fixed inset-0 gap-9 p-4 xs:w-full  xs:h-screen 2xl:hidden lg:hidden   xs:h-screen md:h-screen bg-slate-200 text-slate-500 font-bold text-2xl absolute top-0 left-0 bottom-100%`}>
       <Link to="about" smooth={true} duration={500}>
            <p>
            about
