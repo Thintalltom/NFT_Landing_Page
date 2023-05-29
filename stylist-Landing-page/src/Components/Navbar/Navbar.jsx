@@ -53,22 +53,22 @@ const Navbar = () => {
       <div   className={open ? `hidden` : `  flex-col flex text-center justify-center items-center fixed inset-0 gap-9 p-4 xs:w-full  xs:h-screen 2xl:hidden lg:hidden   xs:h-screen md:h-screen bg-slate-200 text-slate-500 font-bold text-2xl absolute top-0 left-0 bottom-100%`}>
       <Link to="about" smooth={true} duration={500}>
            <p>
-           about
+           About us
           </p> 
           </Link>
           <Link to="approach" smooth={true} duration={500}>
           <p>
-           approach
+           Trending collections
           </p> 
           </Link>
           <Link to="contact" smooth={true} duration={500} >
           <p>
-           contact
+          NFT'S 
           </p> 
           </Link>
           <Link to="service" smooth={true} duration={500} >
           <p>
-           service
+          Our Creators
           </p> 
           </Link>
       </div>

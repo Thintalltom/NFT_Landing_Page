@@ -16,19 +16,19 @@ const Contact = () => {
       photo:
         "https://media.istockphoto.com/id/1388645967/photo/pensive-thoughtful-contemplating-caucasian-young-man-thinking-about-future-planning-new.webp?b=1&s=170667a&w=0&k=20&c=iSQUfWESVgOxHtV5X7lrNxxzaf4b7fMrmI3dXxrFNbQ=",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vel sequi et magni, molestias atque, debitis cupiditate nisi porro minus dolor nulla est laboriosam ipsam voluptate soluta doloremque praesentium asperiores.",
-      name: "Johnas john",
+      name: "Andrew Steel",
     },
     {
       photo:
         "https://media.istockphoto.com/id/1446934118/photo/happy-business-man-listening-to-a-discussion-in-an-office.webp?b=1&s=170667a&w=0&k=20&c=Glt32OkYik_UecuUajJQrY2i52QdwlxSAgXejVrRfqM=",
       text:"Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vel sequi et magni, molestias atque, debitis cupiditate nisi porro minus dolor nulla est laboriosam ipsam voluptate soluta doloremque praesentium asperiores.",
-      name: "Johnas john",
+      name: "Jonos jokes",
     },
     {
       photo:
         "https://images.unsplash.com/photo-1664575603992-0f17b771dd91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8d29tYW58ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60",
       text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio vel sequi et magni, molestias atque, debitis cupiditate nisi porro minus dolor nulla est laboriosam ipsam voluptate soluta doloremque praesentium asperiores.",
-      name: "Johnas john",
+      name: "Flora Fol",
     },
   ];
 
@@ -36,14 +36,14 @@ const Contact = () => {
   const length = User.length;
   const nextSlides = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
-  };
+  };// current slide is equal to zero if length is less than 1 or current is added  1 more
 
   const prevSlides = () => {
-    setCurrent(current === length + 1 ? 0 : current - 1);
-  };
+    setCurrent(current === 0 ? length - 1 : current - 1);
+  };// current slide is equal to zero if length is less than 1 or current is less than 1
 
   if (!Array.isArray(User) || User.length <= 0) {
-    return null;
+    return User; ///this states that if the user.length is empty it is expected to return user again 
   }
 
   return (
@@ -78,6 +78,10 @@ const Contact = () => {
           )}
         </div>
       ))}
+
+      <div className=" mt-[30px] text-center items-center">
+           <p className="text-xs font-bold bg-clip-text text-transparent bg-gradient-to-r from-pink-500 to-violet-500"> developed by tomide</p> 
+      </div>
     </div>
   );
 };
